@@ -1,0 +1,26 @@
+nav{
+    width: 70%;
+    padding: 1%;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    width: 50%;
+    margin-left: auto;
+}
+
+button.list{
+    display: block;
+}
+
