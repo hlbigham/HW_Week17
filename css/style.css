@@ -87,9 +87,9 @@ a.buttonLink{
 button.listBlue{
     display: block;
     width: 400px;
-    height: 103px;
-    left: 270px;
-    top: 737px;
+    height: 102px;
+    /*left: 270px;
+    top: 737px;*/
     background: #E6EEFC;
     border: 1px solid #2656A3;
     box-sizing: border-box;
@@ -136,8 +136,8 @@ button.listPurple{
     display: block;
     width: 400px;
     height: 102px;
-    left: 793px;
-    top: 513px;
+    /*left: 793px;
+    top: 513px;*/
     background: #E6E6FF;
     border: 1px solid #6060A1;
     box-sizing: border-box;
