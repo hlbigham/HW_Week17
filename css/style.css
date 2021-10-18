@@ -65,6 +65,10 @@ img.padded{
 }
 
 /* Buttons and Cards (eventually) */
+a.buttonLink{
+    text-decoration: none;
+}
+
 .buttons{
     text-align: center;    
     margin-top:3%;
@@ -75,7 +79,6 @@ img.padded{
     padding-top:0;
     text-align: center;
 }
-
 
 .block{    
     display: block;
@@ -97,6 +100,36 @@ button.listBlue{
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
+    cursor: pointer;
+}
+
+button.listBlue:hover{
+    background: #2656A3;
+    border: 1px solid #E6EEFC;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E6EEFC;
+}
+
+button.listBlue1:hover span {
+    display:none
+}
+button.listBlue1:hover:before {
+    content:"Improve user navigation through information architecture."
+}
+
+button.listBlue2:hover span {
+    display:none
+}
+button.listBlue2:hover:before {
+    content:"A mobile app to designed enable book sharing."
+}
+
+button.listBlue3:hover span {
+    display:none
+}
+button.listBlue3:hover:before {
+    content:"Boost volunteer aquisition and retention with site clarity."
 }
 
 button.listPurple{
@@ -115,6 +148,36 @@ button.listPurple{
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
+    cursor: pointer;
+}
+
+button.listPurple:hover{
+    background: #6060A1;
+    border: 1px solid #E6E6FF;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #E6E6FF;
+}
+
+button.listPurple1:hover span {
+    display:none
+}
+button.listPurple1:hover:before {
+    content:"Unifies the branding of an internal knowledge base."
+}
+
+button.listPurple2:hover span {
+    display:none
+}
+button.listPurple2:hover:before {
+    content:"Assists employees addressing credit union members."
+}
+
+button.listPurple3:hover span {
+    display:none
+}
+button.listPurple3:hover:before {
+    content:"Breakdown of a dashboard for new call center agents."
 }
 
 /* Typography */
@@ -147,6 +210,10 @@ li.nav{
     color:#FFFFFF;
 }
 
+li.nav:hover{
+    text-decoration: underline;
+}
+
 li.navEnd{
     font-family: Open Sans;
     font-style: normal;
@@ -154,6 +221,10 @@ li.navEnd{
     font-size: 24px;
     line-height: 33px;
     color:#FFFFFF;
+}
+
+li.navEnd:hover{
+    text-decoration: underline;
 }
 
 p{
@@ -171,10 +242,9 @@ p.intro{
     font-size: 24px;
     line-height: 33px;
     color: #E6EEFC;
-    width: 716px;
     align-items: center;
     text-align: center;
-    width: 716px;
+    width: 75%;
     height: 123px;
     left: 362px;
     top: 209px;
