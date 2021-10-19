@@ -224,6 +224,7 @@ img.padded{
     width: 150px;
     height: 48px;
     background: #E6E6FF;
+    color: #6060A1;
     border-radius: 50px;
     border:none;
     font-family: Spartan;
@@ -233,6 +234,12 @@ img.padded{
     line-height: 20px;
     align-items: center;
     text-align: center;
+}
+
+.submitButton:hover{
+    background: #6060A1;
+    color:#E6E6FF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 label{
