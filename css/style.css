@@ -23,31 +23,35 @@ footer{
     vertical-align: center;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
+
+
+/*Navigation*/
 
 nav{
-    width: 65%;
-    float: right;
-    padding: 2%;
+    width: 73%;
+    /*float: right;*/
+    padding: 1%;
 }
 
-ul{
+nav ul{
     list-style-type: none;
-    float:right;
-    margin-left: auto;
+    /*float:right;
+    margin-left: auto;*/
+    display: flex;
+    justify-content: right;
 }
-
-/*Nav Drop-down*/
 
 .portfolioNav{
-    padding-right: 77px;
+    padding-right: 96px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
     color:#FFFFFF;
+    text-decoration: underline;
 }
 
 li.navEnd{
@@ -57,9 +61,10 @@ li.navEnd{
     font-size: 24px;
     line-height: 33px;
     color:#FFFFFF;
+    cursor: pointer;
 }
 
-li.nav:hover, li.navEnd:hover{
+.portfolioNav:hover, li.navEnd:hover{
     text-decoration: underline;
 }
 
@@ -71,14 +76,14 @@ li.nav:hover, li.navEnd:hover{
     display:none;
     position:absolute;
     background-color:#4B4B53;
-    /*font-family: Open Sans;
+    font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 33px;
-    color:#FFFFFF;*/
+    color:#FFFFFF;
     /*max-width: 300px;*/
-    padding: 8px 0px 8px 8px;
+    padding: 8px 8px 8px 8px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
@@ -88,18 +93,29 @@ li.nav:hover, li.navEnd:hover{
 }
 
 .dropdown-tertiary{
-    display: inline-block;
+    display: block;
+    padding-top: 8px;
 }
 
 .dropdown-content2{    
     display:none;
     position:static;
-    background-color:#4B4B53;
-    float: none;
+    background-color:#4B4B53;    
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.tertiaryItem{
+    font-size: 18px;
 }
 
 .dropdown-tertiary:hover .dropdown-content2 {
     display: block;
+}
+
+.tertiaryItem:hover {
+    text-decoration: underline;
 }
 
 /* Classes */
@@ -117,11 +133,21 @@ li.nav:hover, li.navEnd:hover{
 }
 
 div.left{
-    float: left;
+    /*float: left;
+    padding: 1%;*/
+    width: 60%;
+    display: inline-flex;
+    justify-content: left;
 }
 
 div.right{
-    float: right;
+    display: inline-flex;
+    justify-content: right;
+    vertical-align: center;
+    width: 39%;
+    padding-bottom: 8px;
+    /*float: right;
+    width: 49%;*/
 }
 
 img.padded{
