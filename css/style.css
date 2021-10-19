@@ -79,7 +79,7 @@ nav ul{
 }
 
 li a{
-    color:white;
+    color:#E6EEFC;
     text-decoration: none;
 }
 
@@ -90,7 +90,7 @@ li a{
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
-    color:#FFFFFF;
+    color:#E6EEFC;
     cursor: pointer;
 }
 
@@ -104,7 +104,7 @@ li.navEnd{
     font-weight: normal;
     font-size: 24px;
     line-height: 33px;
-    color:#FFFFFF;
+    color:#E6EEFC;
     cursor: pointer;
 }
 
@@ -143,6 +143,7 @@ li.navEnd{
 .dropdown-tertiary{
     display: block;
     padding-top: 8px;
+    color: #E6E6FF;
 }
 
 .dropdown-content2{    
@@ -156,6 +157,7 @@ li.navEnd{
 
 .tertiaryItem{
     font-size: 18px;
+    color: #E6E6FF;
 }
 
 .dropdown-tertiary:hover .dropdown-content2 {
@@ -204,11 +206,12 @@ img.padded{
 
 .centeredText{
     text-align: center;
+
 }
 
 .centeredForm{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 2%;
 }
 
@@ -400,6 +403,7 @@ button.listPurple3:hover:before {
 .cardContainer{
     display:flex;
     justify-content: space-evenly;
+    margin:0 5%;
 }
 
 .flip-card {
@@ -416,7 +420,7 @@ button.listPurple3:hover:before {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
 }
 
 .flip-card:hover .flip-card-inner {
@@ -452,6 +456,7 @@ button.listPurple3:hover:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .flip-card-frontBlue, .flip-card-backBlue {
@@ -482,6 +487,7 @@ button.listPurple3:hover:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 /* Typography */
@@ -517,8 +523,7 @@ h3.noBold{
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 25px;    
+    font-size: 24px;  
     color: #E6EEFC;
 }
 
@@ -527,7 +532,7 @@ h3.resume{
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
-    line-height: 40px;    
+    line-height: 25px;    
     color: #E6EEFC;
     text-decoration: underline;
 }
