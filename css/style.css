@@ -1,29 +1,64 @@
 /* Top Level */
 
 html {
-    min-height: 100%;    
+    min-height: 100%;
+    margin:0;
+    padding:0;    
 }
 
 body{
     background: linear-gradient(180deg, #4B4B53 29.86%, #383861 58.73%, #3A5581 98.44%);
     background-repeat: no-repeat;
     background-size: auto;
+    background-attachment: fixed;
+    overflow:overlay;
+    margin:0;
+    padding:0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
     padding-top: 2%;
 }
 
-section{
+.portfolioSection{
     text-align: center;
     min-height: calc(100%);
 }
 
 footer{
+    margin-top: auto;
     vertical-align: center;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    padding-bottom: 25px;
+    padding-bottom: 1%;
+}
+
+/* Scroll Bar */
+
+    /* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;*/
+    background-color: transparent;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background:#D3D3D3;
+    border-radius: 8px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
 }
 
 
@@ -43,6 +78,11 @@ nav ul{
     justify-content: right;
 }
 
+li a{
+    color:white;
+    text-decoration: none;
+}
+
 .portfolioNav{
     padding-right: 96px;
     font-family: Open Sans;
@@ -51,6 +91,10 @@ nav ul{
     font-size: 24px;
     line-height: 33px;
     color:#FFFFFF;
+    cursor: pointer;
+}
+
+.portNav2{    
     text-decoration: underline;
 }
 
@@ -62,6 +106,10 @@ li.navEnd{
     line-height: 33px;
     color:#FFFFFF;
     cursor: pointer;
+}
+
+.aboutMe2{
+    text-decoration: underline;
 }
 
 .portfolioNav:hover, li.navEnd:hover{
@@ -154,7 +202,77 @@ img.padded{
     padding-right:34px;
 }
 
-/* Buttons and Cards (eventually) */
+.centeredText{
+    text-align: center;
+}
+
+.centeredForm{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.wordVomit{
+    width:75%;
+    margin:auto;
+    padding:25px
+}
+
+/*About Me Contact Form*/
+
+.submitButton{
+    width: 150px;
+    height: 48px;
+    background: #E6E6FF;
+    border-radius: 50px;
+    border:none;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+label{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #E6EEFC;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+
+.freeForm{
+    background: #E6EEFC;
+    border-radius: 10px;
+    border:none;
+    width: 50%;
+    height: 32px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #4B4B53;
+    margin-top: 5px;
+    padding:5px 10px 5px 10px;
+}
+
+.message{
+    width: 50%;
+    height: 303px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Buttons */
+
 a.buttonLink{
     text-decoration: none;
 }
@@ -270,6 +388,95 @@ button.listPurple3:hover:before {
     content:"Breakdown of a dashboard for new call center agents."
 }
 
+/* Cards */
+
+.cardContainer{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: #6060A1;
+    background-color: #E6E6FF;
+    border: 1px solid #6060A1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-back {
+    color: #E6E6FF;
+    background-color: #6060A1;
+    border: 1px solid #E6E6FF;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-frontBlue, .flip-card-backBlue {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-frontBlue {
+    background-color: #E6EEFC;
+    border: 1px solid #2656A3;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flip-card-backBlue {
+    color: #E6EEFC;
+    background-color: #2656A3;
+    border: 1px solid #E6EEFC;
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Typography */
 
 h1{
@@ -290,7 +497,78 @@ h2{
     color: #E6EEFC;
 }
 
-p{
+h3{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;    
+    color: #E6EEFC;
+}
+
+h3.noBold{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 25px;    
+    color: #E6EEFC;
+}
+
+h3.resume{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;    
+    color: #E6EEFC;
+    text-decoration: underline;
+}
+
+h3.purpleCard{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #6060A1;
+}
+
+h3.blueCard{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #2656A3;
+}
+
+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #D3DDED;
+}
+
+p.purpleCard {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E6E6FF;
+}
+
+p.blueCard {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #E6EEFC;
+}
+
+footer p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
