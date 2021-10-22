@@ -21,14 +21,18 @@ body{
 
 header{
     padding-top: 2%;
+    
 }
 
 .portfolioSection{
     text-align: center;
-    min-height: calc(100%);
+    flex:1;
 }
 
 footer{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
     margin-top: auto;
     vertical-align: center;
     padding-left: 2.5%;
@@ -96,7 +100,6 @@ li.navEnd{
     font-size: 24px;
     line-height: 33px;
     color:#E6EEFC;
-    cursor: pointer;
 }
 
 .aboutMe2{
@@ -172,19 +175,11 @@ li.navEnd{
     vertical-align: center;
 }
 
-div.left{
-    width: 60%;
-    display: inline-flex;
-    justify-content: left;
-}
-
-div.right{
+/*div.right{
     display: inline-flex;
     justify-content: right;
     vertical-align: center;
-    width: 39%;
-    padding-bottom: 8px;
-}
+}*/
 
 img.padded{
     padding-right:34px;
@@ -557,27 +552,14 @@ p {
 }
 
 p.purpleCard {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
     color: #E6E6FF;
 }
 
 p.blueCard {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
     color: #E6EEFC;
 }
 
 footer p {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     color: #D3DDED;
@@ -589,11 +571,67 @@ p.intro{
     font-size: 24px;
     line-height: 33px;
     color: #E6EEFC;
-    align-items: center;
     text-align: center;
     width: 75%;
     height: 123px;
     display: flex;
     align-items: center;
     margin: auto;
+}
+
+/* Case Study */
+
+.caseStudy{
+    display: flex;    
+    justify-content:center;
+}
+
+.caseStudyItem{
+    width: 48%;
+    text-align: center;
+}
+
+.caseContent{
+    text-align: left;
+}
+
+.accordion {
+    background-color: #E6EEFC;
+    color: #2656A3;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 24px;
+    font-family: Spartan;    
+    font-weight: bold;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: rgba(159, 179, 211, 0.99);
+}
+  
+.accordion:after {
+    content: '\002B';
+    color: #2656A3;
+    font-weight: bold;
+    margin-left: 15px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.sectionMargin{
+    margin: 8px 0;
 }
