@@ -18,10 +18,12 @@ for (var i = 0; i < acc.length; i++) {
   $(this).toggleClass('hover');
 });*/
 
-const flip = document.getElementsByClassName("flip-card");
- flip.addEventListener("click", flipCard);
+var flip = document.getElementsByClassName("flip-card");
 function flipCard(){
-    flip.classList.toggle("flip-card");
+  flip.classList.toggle("flip-card");
+
+  flip.addEventListener("click", flipCard);
+
 }
 
 
